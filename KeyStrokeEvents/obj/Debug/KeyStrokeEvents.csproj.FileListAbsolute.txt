@@ -4,3 +4,4 @@ C:\Code\C#\KeyStrokeEvents\KeyStrokeEvents\bin\Debug\KeyStrokeEvents.pdb
 C:\Code\C#\KeyStrokeEvents\KeyStrokeEvents\obj\Debug\KeyStrokeEvents.csprojResolveAssemblyReference.cache
 C:\Code\C#\KeyStrokeEvents\KeyStrokeEvents\obj\Debug\KeyStrokeEvents.exe
 C:\Code\C#\KeyStrokeEvents\KeyStrokeEvents\obj\Debug\KeyStrokeEvents.pdb
+C:\Code\C#\KeyStrokeEvents\KeyStrokeEvents\bin\Debug\KeyCombinationConfig.xml

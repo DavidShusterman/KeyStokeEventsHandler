@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -43,13 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyboardHook.cs" />
-    <Compile Include="Keylogger.cs" />
+    <Compile Include="BL\KeyboardHooks\KeyboardHook.cs" />
+    <Compile Include="BL\Configuration\KeyCombinationConfigurationReader.cs" />
+    <Compile Include="BL\KeyboardHooks\KeyWatcher.cs" />
+    <Compile Include="BL\ProgramExecution\ProgramExecuter.cs" />
+    <Compile Include="KeyStrokeCombination.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>KeyStrokeCombination.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Interfaces\IKeyboardKeysConfigurationReader.cs" />
+    <Compile Include="Models\KeyCombinationConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="KeyStrokeCombination.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>KeyStrokeCombination.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KeyCombinationConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

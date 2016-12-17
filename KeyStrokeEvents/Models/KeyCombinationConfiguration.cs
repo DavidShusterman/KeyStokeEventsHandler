@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace KeyStrokeEvents.Models
 {
-    class KeyCombination
+    [Serializable]
+    public class KeyCombinationConfiguration
     {
+        public string KeyCombination { get; set; }
+
+        public string ProgramToExecute { get; set; }
     }
 }

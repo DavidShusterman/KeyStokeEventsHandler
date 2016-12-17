@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Windows.Forms;
+using KeyStrokeEvents.BL.ProgramExecution;
 
 namespace KeyStrokeEvents
 {
@@ -17,10 +18,13 @@ namespace KeyStrokeEvents
         
         static void Main(string[] args)
         {
-            Keylogger keyLogger = new Keylogger();
-            keyLogger.InitializeLogging();
+            KeyCombinationConfigurationReader reader = new KeyCombinationConfigurationReader();
+            var keys = reader.GetListOfKeyStrokes();
+            ProgramExecuter executer = new ProgramExecuter(reader.GetKeyConfiguration().ProgramToExecute);
+            KeyWatcher keyWatcher = new KeyWatcher(keys);
+            keyWatcher.MagicSequencePressed += () => executer.ExecuteFile();
+            keyWatcher.InitializeLogging();
         }
 
-        
     }
 }
