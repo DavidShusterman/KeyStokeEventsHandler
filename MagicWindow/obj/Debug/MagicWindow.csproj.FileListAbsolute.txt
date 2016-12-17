@@ -1,0 +1,9 @@
+C:\Code\C#\KeyStrokeEvents\MagicWindow\bin\Debug\MagicWindow.exe.config
+C:\Code\C#\KeyStrokeEvents\MagicWindow\bin\Debug\MagicWindow.exe
+C:\Code\C#\KeyStrokeEvents\MagicWindow\bin\Debug\MagicWindow.pdb
+C:\Code\C#\KeyStrokeEvents\MagicWindow\obj\Debug\MagicWindow.csprojResolveAssemblyReference.cache
+C:\Code\C#\KeyStrokeEvents\MagicWindow\obj\Debug\MagicWindow.Form1.resources
+C:\Code\C#\KeyStrokeEvents\MagicWindow\obj\Debug\MagicWindow.Properties.Resources.resources
+C:\Code\C#\KeyStrokeEvents\MagicWindow\obj\Debug\MagicWindow.csproj.GenerateResource.Cache
+C:\Code\C#\KeyStrokeEvents\MagicWindow\obj\Debug\MagicWindow.exe
+C:\Code\C#\KeyStrokeEvents\MagicWindow\obj\Debug\MagicWindow.pdb

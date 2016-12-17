@@ -1,4 +1,4 @@
 ﻿<KeyCombinationConfiguration>
-  <KeyCombination>abcd</KeyCombination>
+  <KeyCombination>npm</KeyCombination>
   <ProgramToExecute>"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</ProgramToExecute>
 </KeyCombinationConfiguration>
